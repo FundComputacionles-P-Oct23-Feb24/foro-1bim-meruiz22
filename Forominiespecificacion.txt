@@ -26,8 +26,8 @@
 28.      Fin si
 29.   Fin si
 30.Fin si 
-31.cadena <--cadena + nombre +" edad "+edad,+ "elo " + elo, + "nivel "+nivel
-32.contador <-- contador +1
-33.<< cadena
+31.cadena <--cadena + nombre +" edad "+edad,+ "elo " + elo, +nivel
+32.<< cadena
+33.contador <-- contador +1
 34.Fin Mientras
 35.Fin
