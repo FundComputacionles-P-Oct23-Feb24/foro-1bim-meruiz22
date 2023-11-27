@@ -1,0 +1,33 @@
+1. Inicio
+2. nombre, x(100)[{a-z},{A-Z},{BS}]
+3. cadena x(100)[{a-z},{A-Z},{BS}]
+4. cadena<--""Listado de miembros del club de ajedrez\n""
+5. nivel x(100)[{a-z},{A-Z},{BS}]
+6. edad,i[0-n]
+7. elo,i[0-n]
+8. miembros,d[0-n]
+9. miembros <--5
+10.contador, i[0-n]
+11.contador <--1
+12.Mientras contador <=miembros entonces 
+13.<< "Ingrese nombre del miembro"
+14.<< "Ingrese la edad del miembro"
+15.<< "Ingrese el elo del miembro"
+18.Si elo >= 0 and elo <= 1400 entonces
+19.   nivel "nivel de jugador principiante"
+20. De lo contrario elo > 1400 and elo <= 1800 
+21.   nivel = "nivel aficionado o de jugador habitual"
+22.   Si elo > 1800 and elo <= 2200 entoces 
+23.      nivel = "nivel semiprofesional o de jugador de club fuerte"            
+24.   De lo contrario elo > 2200 and elo <= 2600 
+25.      nivel = "nivel maestro internacional"
+26.      Si elo > 2600 entonces 
+27.         nivel = "nivel gran maestro";
+28.      Fin si
+29.   Fin si
+30.Fin si 
+31.cadena <--cadena + nombre +" edad "+edad,+ "elo " + elo, + "nivel "+nivel
+32.contador <-- contador +1
+33.<< cadena
+34.Fin Mientras
+35.Fin
